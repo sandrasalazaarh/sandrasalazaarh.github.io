@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+header {
+    background-color: #0055a5;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: "Playfair Display", serif;
+}
+
+header h1 {
+    font-size: 29px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.bienvenida {
+    background-image: url('../desarrollo/images/frenchflag.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 100px 20px;
+    margin-top: 60px; /* Para compensar el encabezado fijo */
+}
+
+.bienvenida h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.bienvenida button {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bienvenida button a {
+    color: white;
+}
+
+.imageneshistoricas {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 50%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.imagenesculturas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagenegastronomia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section {
+    padding: 60px 20px;
+    text-align: justify; 
+    align-items: flex-end;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#mapa {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    align-items:center
+}
+
+
+
+footer {
+    background-color: #ec1616;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #f9f6f6;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bienvenida h2 {
+        font-size: 36px;
+    }
+
+    .bienvenida p {
+        font-size: 16px;
+    }
+}
